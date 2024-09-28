@@ -35,16 +35,3 @@ class Solution(object):
             current = current.next
 
         return l3
-
-l1 = ListNode(2,ListNode(4,ListNode(3)))
-l2 = ListNode(5,ListNode(6,ListNode(4)))
-
-print(Solution().addTwoNumbers(l1,l2).val)
-print(Solution().addTwoNumbers(l1,l2).next.val)
-print(Solution().addTwoNumbers(l1,l2).next.next.val)
-
-print(ListNode(7,ListNode(0,ListNode(8))).val)
-print(ListNode(7,ListNode(0,ListNode(8))).next.val)
-print(ListNode(7,ListNode(0,ListNode(8))).next.next.val)
-
-assert Solution().addTwoNumbers(l1,l2) == ListNode(7,ListNode(0,ListNode(8)))
